@@ -1,0 +1,12 @@
+.totalQuiz{
+    font-size: 22px;
+font-weight: 500;
+color: rgb(16, 77, 110);
+}
+.cardLayout{
+    width: 250px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.cardBody{
+}
