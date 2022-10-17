@@ -16,7 +16,7 @@ const Header = () => {
             <Link to='/' className='linkDesign'>Home</Link>
             <Link to='/topic' className='linkDesign'>Topic</Link>
             <Link to='/statistics' className='linkDesign'>Statistics</Link>
-            <Link to='blog' className='linkDesign'>Blog</Link>
+            <Link to='/blog' className='linkDesign'>Blog</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

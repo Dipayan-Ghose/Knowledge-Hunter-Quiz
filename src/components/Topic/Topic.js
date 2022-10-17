@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData  } from "react-router-dom";
 import EachTopic from "../EachTopic/EachTopic";
 import './Topic.css';
@@ -8,8 +8,18 @@ const Topic = () => {
   const insideQuiz = quiz.data;
   console.log(insideQuiz);
 
-  const ClickHandler = (id) =>{
-  console.log("id= ", id);
+  const [count, setCount]=useState();
+
+  // useEffect(()=>{
+  //   fetch(`https://openapi.programming-hero.com/api/quiz/${id}`);
+  // });
+  
+
+ 
+  
+
+    const ClickHandler = (id) =>{
+    console.log("id= ", id);
   
 };
 // function loader({ id }) {
