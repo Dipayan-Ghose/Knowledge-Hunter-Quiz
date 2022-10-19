@@ -1,9 +1,10 @@
 import React from 'react';
 import './QuizOptions.css';
-const QuizOptions = ({opt}) => {
+const QuizOptions = ({opt,clickBox}) => {
+
     return (
         <div className='optionGap '>
-           <input type='checkbox' ></input> {opt}
+           <input onClick={()=>clickBox(opt)} type='checkbox' ></input> {opt}
         </div>
     );
 };
