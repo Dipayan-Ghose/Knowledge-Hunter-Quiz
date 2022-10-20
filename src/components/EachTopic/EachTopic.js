@@ -8,8 +8,8 @@ const EachTopic = ({inQuiz,ClickHandler}) => {
 
   return (
     <div className="cardLayout" >
-      <Card >
-        <Card.Img variant="top" className="" src={logo} />
+      <Card className="">
+        <Card.Img variant="top" className="cardImg" src={logo} />
         <Card.Body className="cardBody">
           <Card.Title className="totalQuiz">{name}</Card.Title>
           <Card.Text className="totalQuiz">Total Quiz: {total}

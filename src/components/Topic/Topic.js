@@ -31,7 +31,7 @@ const Topic = () => {
 // }
 
   return (
-    <div className="container mt-5 topicDesign">
+    <div className="container mt-5  topicDesign">
       {insideQuiz.map((inQuiz) => (
         <EachTopic key={inQuiz.id} inQuiz={inQuiz} ClickHandler={ClickHandler}></EachTopic>
       ))}
