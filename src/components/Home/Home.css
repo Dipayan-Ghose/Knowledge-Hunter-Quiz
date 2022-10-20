@@ -1,0 +1,22 @@
+.img{
+    width: 80%;
+    border-radius: 10px;
+}
+.header{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    background-color: rgba(46, 151, 232, 0.343);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h3{
+    width: 80%;
+    color: rgb(16, 77, 110);
+    margin: auto;
+}
+span{
+    color: rgb(4, 79, 252);
+}

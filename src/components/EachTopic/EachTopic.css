@@ -10,3 +10,10 @@ color: rgb(16, 77, 110);
 }
 .cardBody{
 }
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
+.link:hover{
+    color: rgb(216, 252, 96);
+}

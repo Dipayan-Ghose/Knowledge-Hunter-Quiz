@@ -9,12 +9,12 @@ const EachTopic = ({inQuiz,ClickHandler}) => {
   return (
     <div className="cardLayout" >
       <Card >
-        <Card.Img variant="top" src={logo} />
+        <Card.Img variant="top" className="" src={logo} />
         <Card.Body className="cardBody">
           <Card.Title className="totalQuiz">{name}</Card.Title>
           <Card.Text className="totalQuiz">Total Quiz: {total}
           </Card.Text>
-          <Button onClick={()=>ClickHandler(id)} className="fs-5 w-75" variant="primary">Start Quiz <Link to={`/inQuiz/${id}`}>{id}</Link></Button>
+          <Button onClick={()=>ClickHandler(id)} className="fs-5 w-75 " variant="primary"> <Link to={`/inQuiz/${id}`} className='link'>Start Quiz</Link></Button>
         </Card.Body>
       </Card>
     </div>

@@ -19,14 +19,10 @@ const Quiz = ({ ques }) => {
    
     if(ans===correctAnswer){
         toast("Correct Answer",{autoClose:1000});
-      
-
         // alert ('correct');
     }
     else{
        toast("Wrong Answer",{autoClose:1000}) ;
-      
-
         // alert('wrong');
     }
   };
@@ -39,8 +35,8 @@ const Quiz = ({ ques }) => {
     <div className="cardStyle">
      <Card border="secondary" className="cardPosition">
         <Card.Header className=" text-center">
-            <div dangerouslySetInnerHTML={{__html: question}} ></div>
-           <Button onClick={press} variant="light"><FaEye/></Button> 
+            <div className="fs-5" dangerouslySetInnerHTML={{__html: question}} ></div>
+           <Button onClick={press} variant="light" >< FaEye/></Button> 
             </Card.Header>
         <Card.Body>
           <Card.Text className="options justify-evenly">
