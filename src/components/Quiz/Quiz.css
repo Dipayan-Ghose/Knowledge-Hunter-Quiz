@@ -1,8 +1,17 @@
 .cardStyle{
     width: 70%;
     margin: auto;
+
 }
 .options{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+.cardPosition{
+    margin: 2%;
+}
+.align-right{
+    position: 'absolute';
+    right: 5;
+    top: 5;
 }

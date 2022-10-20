@@ -4,7 +4,7 @@ const QuizOptions = ({opt,clickBox}) => {
 
     return (
         <div className='optionGap '>
-           <input onClick={()=>clickBox(opt)} type='checkbox' ></input> {opt}
+           <input onClick={()=>clickBox(opt)} type='radio' ></input> {opt}
         </div>
     );
 };

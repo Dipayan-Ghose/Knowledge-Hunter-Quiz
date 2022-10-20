@@ -4,15 +4,22 @@ import './Quiz.css';
 import QuizOptions from "./QuizOptions/QuizOptions";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { FaEye } from 'react-icons/fa';
+import { Button } from "react-bootstrap";
+import { useState } from "react";
 
 const Quiz = ({ ques }) => {
   const { id, correctAnswer, options, question } = ques;
+
+  // const [isChecked, setIsChecked] = useState(false);
+  // setIsChecked(isChecked);
+
  
   const clickBox =(ans)=>{
+   
     if(ans===correctAnswer){
         toast("Correct Answer",{autoClose:1000});
-        
+      
 
         // alert ('correct');
     }
@@ -22,16 +29,19 @@ const Quiz = ({ ques }) => {
 
         // alert('wrong');
     }
-    
-
   };
+  const press =()=>{
+    toast(correctAnswer,{autoClose:1600});
+}
   
 
   return (
     <div className="cardStyle">
-     <Card border="secondary" >
-        <Card.Header >
-            <div dangerouslySetInnerHTML={{__html: question}}></div></Card.Header>
+     <Card border="secondary" className="cardPosition">
+        <Card.Header className=" text-center">
+            <div dangerouslySetInnerHTML={{__html: question}} ></div>
+           <Button onClick={press} variant="light"><FaEye/></Button> 
+            </Card.Header>
         <Card.Body>
           <Card.Text className="options justify-evenly">
             {
